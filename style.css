@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&family=Playwrite+US+Trad:wght@100..400&display=swap');
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+
+background-color: #000;
+}
+header{
+    width: 100%;
+    height:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    z-index:99;
+    box-shadow: 0 0 10px #000;
+    background: black;
+    color:white;
+}
+
+i{
+    color:white;
+    cursor: pointer;
+}
+header .logo{
+    flex:1;
+    color:#fff;
+    margin-left: 50px;
+    text-transform:uppercase; 
+    font-size: 10px;
+    font-family: "Playwrite US Trad", cursive;
+}
+header .search-bar{
+    flex:1;
+    position: relative;
+    font-family: "Playwrite US Trad", cursive;
+}
+.search-bar input{
+    width: 100%;
+    height:40px;
+    border: none;
+    outline:none;
+    background: #f2f2f2;
+    border-radius: 30px;
+    color:gray;
+    font-size: 16px;
+    text-align: center;
+    padding-left: 5px;
+    
+}
+.search-bar button{
+    cursor:pointer;
+    width: 40px;
+    height:40px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0.9);
+    background: #973131;
+}
+header ul{
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Playwrite US Trad", cursive;
+}
+header ul li{
+    list-style: none;
+
+}
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding:10x 15px;
+}
+header ul li a:hover{
+    border-bottom: 2px solid #973131;
+    padding:10px;
+    border-radius: 10px;
+    background:linear-gradient(
+        45deg,
+       #EE4E4E, #973131,#E0A75E,#fff);
+}
+header .menu{
+    font-size: 2.5rem;
+    display: none;
+}
+
+.main-section {
+    height:100vh;
+    display: flex;
+    align-items: center;
+    font-family: Raleway;
+}
+.main-section .main{
+    color: #fff;
+    max-width:1200px;
+    margin: 0 40px;
+}
+.main-section .main h1{
+    font-size:3rem;
+    max-width:600px;
+}
+.main-section .main p{
+    font-size:1rem;
+    max-width:600px;
+    margin-top: 15px;
+}
+.main-section .main button{
+    background: #fff;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 38px;
+    padding: 12px 30px;
+    border-radius: 10px;
+}
+
+.box img {
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    position:fixed;
+    right:0;
+    object-fit: cover;
+    width:500px;
+    height:400px;
+    top:150px;
+    background-color: #000;
+
+}
